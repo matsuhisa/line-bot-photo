@@ -33,10 +33,17 @@ group :development do
   gem 'spring-watcher-listen'
 end
 
-group :test do
+group :development, :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+
+  gem "pry-byebug"
+  gem "pry-doc", require: false
+  gem "pry-rails"
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
